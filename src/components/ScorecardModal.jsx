@@ -6,7 +6,7 @@ const ScorecardModal = ({ matchId, onClose }) => {
     const [activeTab, setActiveTab] = useState(0);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/api/matches/${matchId}/scorecard`)
+        fetch(`https://cricbuzzclone-server.onrender.com/api/matches/${matchId}/scorecard`)
             .then(res => res.json())
             .then(data => {
                 setScorecard(data);

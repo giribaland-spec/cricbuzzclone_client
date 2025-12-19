@@ -4,7 +4,7 @@ const NewsSection = () => {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/news')
+        fetch('https://cricbuzzclone-server.onrender.com/api/news')
             .then(res => res.json())
             .then(data => setNews(data))
             .catch(err => console.error(err));

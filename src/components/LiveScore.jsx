@@ -8,7 +8,7 @@ const LiveScore = () => {
 
     const fetchMatches = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/matches');
+            const response = await fetch('https://cricbuzzclone-server.onrender.com/api/matches');
             const data = await response.json();
             setMatches(data);
             setLoading(false);
